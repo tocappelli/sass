@@ -1,0 +1,12 @@
+.bodygaleria{
+  @extend .bodyquiensoy;
+}
+.filmgaleria{
+  @extend .filmquiensoy;
+}
+.nombregaleria{
+  @extend .nombrequiensoy;
+}
+.fotosgaleria{
+  @extend .fotosquiensoy;
+}

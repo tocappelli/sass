@@ -3,129 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aplicando Sass</title>
+    <!--SEO-->
+    <meta name="description" content="Bautizado como LA COMADREJA Tomas Cappelli expone sus obras  fotográficas. Fotos de paisaje- Fotos Urbanas- Fotos de Bandas- Fotos Artísticas - © Copyright Tomas Cappelli">
+    <meta name="keywords"  content="Fotografía, fotógrafo de paisaje, fotógrafo de deportes, fotógrafo de bandas, fotógrafo de bandas en buenos aires,  fotógrafo urbano buenos aires, fotografía artística,mejores fotógrafos de argentina, fotógrafos argentinos, fotografía en buenos aires,fotógrafo de paisaje en argentina, fotos de argentina, fotos de paisaje en argentina, odc fotografía, el ojo de la comadreja, fotografía de comadreja">
+    <!--Titulo-->
+    <title>ODC / Fotografía</title>
     <!-- Link Bootsrtrap hoja de estilos-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--hoja de estilos propia-->
     <link rel="stylesheet" href="./css/estilo.css">
     <script src="https://kit.fontawesome.com/1cbcf83150.js" crossorigin="anonymous"></script>
+    <!--animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--googlefont-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Kdam+Thmor+Pro&family=Poppins:wght@500&display=swap" rel="stylesheet">
-
+    <!--icono pestaña-->
+    <link rel="shortcut icon" href="./img/logoblanco.png">
   </head>
-  <body>
+  <body class="bodyindex">
     <!--NavBar-->
     <header>
-<nav class="navbar navbar-expand-lg ">
-  <div class="container">
-    <a class="navbar-brand animate__animated animate__flipInX" href="index.html"><img class="logo" src="./img/logoblanco.png" alt="logoodc"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse animate__animated animate__fadeInRight" id="navbarNav">
-      <ul class="navbar-nav mx-auto pt-auto" >
-        <li class="nav-item">
-          <a class="nav-link fs-6 ms-5 text-white" href="sobremi.html">SOBRE MI</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6 ms-5 text-white"  href="#">COMUNIDAD ODC</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6 ms-5 text-white" href="#">GALERIA</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fs-6 ms-5 text-white" href="#">CONTACTO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="https://www.instagram.com/odcfotos/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li class="nav-item">
-          <div><a class="nav-link text-white" href="https://www.behance.net/tomascappelli/" target="_blank"><i class="fa-brands fa-behance"></i></a></div>
-        </li>
-      </ul>
-    </div>
-  
-</div>
-</nav>
+      <nav class="navbar fixed-top bg-withe">
+        <div class="container-fluid d-flex justify-content-end rounded-pill bg-withe ">
+          <button class="navbar-toggler bg-white animate__animated animate__bounceInLeft" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a class="odcnav" href="index.html">ODC/</a>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body text-white">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="quiensoy.html">Quién Soy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Porfolio
+                  </a>
+                  <ul class="dropdown-menu"  aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="galeria.html">FOTOS</a></li>
+                    <li><a class="dropdown-item" href="#">SHORT FILM</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item " href="https://www.instagram.com/odcfotos/"target="_blank">INSTAGRAM</a></li>
+                    <li><a class="dropdown-item" href="https://www.behance.net/tomascappelli/" target="_blank">BEHANCE</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
 </header>
-<!--carousel de fotos-->
+<!--main con logo en letras-->
 <main>
- <div id="carouselExampleControls" class="carousel slide animate__animated animate__fadeIn" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/iguana.jpg" class="d-block w-100" alt="iguana">
-        </div>
-       <div class="carousel-item">
-         <img src="./img/cerro campanario.jpg" class="d-block w-100" alt="cerro bariloche">
-        </div>
-       <div class="carousel-item">
-         <img src="./img/tablas.jpg" class="d-block w-100" alt="gentesurfeando">
-       </div>
-    </div>
-     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-       <span class="visually-hidden">Previous</span>
-     </button>
-     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-     </button>
-</div>
+  <section class="logo">
+   <h1 class="elojo focus-in-expand">ELOJODELACOMADREJA/</h1>
+   <h1 class="elojoabrevidado focus-in-expand">ODC/</h1>
+ </section>
+ 
 </main>
-<!--footer-->
-<footer>
- <div class="container-fluid opacity-75 animate__animated animate__bounceInLeft">
-   <div class="row p-3 bg-withe ">
-     
-     <div class="col-xs-12 col-md-6 col-lg-4">
-      <p class="h4 text-white">Comunidad ODC</p>
-      <hr>
-      <div class="mb-3">
-        <i class="fa-brands fa-discord fa-inverse"></i>
-      <a class="text-white" href="#">Discord</a>
-    </div>
-    <div class="mb-3">
-      <i class="fa-brands fa-telegram fa-inverse"></i>
-      <a class="text-white" href="#">Telegram</a>
-    </div>
 
-      </div>
-     <div class="col-xs-12 col-md-6 col-lg-4">
-      <p class="h4 text-white">Siganos</p>
-      <hr>
-        <div class="mb-3">
-          <i class="fa-brands fa-instagram fa-inverse"></i>
-        <a class="text-white" href="https://www.instagram.com/odcfotos/" target="_blank">Instagram</a>
-      </div>
-      <div class="mb-3">
-        <i class="fa-brands fa-behance fa-inverse"></i>
-        <a class="text-white" href="https://www.behance.net/tomascappelli/" target="_blank">Behance</a>
-      </div>
-      </div>
-
-     <div class="col-xs-12 col-md-6 col-lg-4">
-      <p class="h4 text-white">Datos de Contacto</p>
-      <hr>
-      <div class="mb-3 d-flex">
-        <i class="fa-solid fa-envelope m-1 fa-inverse"></i><p class="text-white">tocappelli@gmail.com</p>
-      </div>
-      <div class="mb-3">
-        <i class="fa-brands fa-whatsapp m-1 fa-inverse"> <a class="text-white" href="https://wa.me/541154782712?text=Hola%20Comadreja!!!" target="_blank">549115478-2712</a></i>
-      </div>
-      <div class="mb-3 d-flex">
-        <i class="fa-solid fa-earth-americas m-1 fa-inverse"></i><p class="text-white">Buenos Aires, Argentina</p>
-      </div>
-      
-  
-    </div>
-
-
-     </div>
-   </div>
- </div>
-</footer>
 
 
 
